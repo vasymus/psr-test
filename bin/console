@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+define('APP_START', microtime(true));
+
+/** @var \Symfony\Component\Console\Application $application */
+$application = require __DIR__ . '/../bootstrap/console-app.php';
+
+$application->run();

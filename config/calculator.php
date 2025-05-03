@@ -1,0 +1,42 @@
+<?php
+
+return [
+    'bin_list_net' => [
+        'url' => 'https://lookup.binlist.net',
+    ],
+    'exchange_rates' => [
+        'url' => 'https://api.exchangeratesapi.io',
+        'api_key' => env('EXCHANGE_RATES_API_KEY', ''),
+    ],
+    'eu_countries_a2' => [
+        'AT',
+        'BE',
+        'BG',
+        'CY',
+        'CZ',
+        'DE',
+        'DK',
+        'EE',
+        'ES',
+        'FI',
+        'FR',
+        'GR',
+        'HR',
+        'HU',
+        'IE',
+        'IT',
+        'LT',
+        'LU',
+        'LV',
+        'MT',
+        'NL',
+        'PO',
+        'PT',
+        'RO',
+        'SE',
+        'SI',
+        'SK',
+    ],
+    'eu_commission_rate' => 0.01,
+    'non_eu_commission_rate' => 0.02,
+];

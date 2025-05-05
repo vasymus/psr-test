@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: |
+        bash -c "tail -f /dev/null"

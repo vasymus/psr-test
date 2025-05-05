@@ -1,0 +1,37 @@
+{
+    "name": "vasymus/psr-test",
+    "description": "A simple CLI PHP commission calculator app",
+    "type": "project",
+    "require": {
+        "php": ">=8.3",
+        "symfony/console": "^7.2",
+        "symfony/http-client": "^7.2",
+        "symfony/dotenv": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "Tests\\": "tests/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.1",
+        "squizlabs/php_codesniffer": "^3.12",
+        "phpunit/phpunit": "^12.1"
+    },
+    "scripts": {
+        "check": "phpstan analyse",
+        "style": "phpcs",
+        "fix": "phpcbf",
+        "test": "phpunit",
+        "post-install-cmd": [
+            "@composer dump-autoload"
+        ],
+        "post-update-cmd": [
+            "@composer dump-autoload"
+        ]
+    }
+}
